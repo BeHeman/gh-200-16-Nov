@@ -16,4 +16,6 @@ jobs:
         run: ls -la
 
       - name: Run Script
-        run: ./scripts/greet.sh
+        run: |
+          chmod +x scripts/greet.sh
+          ./scripts/greet.sh
